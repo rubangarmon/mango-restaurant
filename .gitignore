@@ -277,6 +277,7 @@ bin/
 obj/
 bin
 obj
+resources
 
 # Common node modules locations
 /node_modules
