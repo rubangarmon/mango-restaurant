@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Mango.Services.ProductAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/products")]
     [ApiController]
     public class ProductAPIController : ControllerBase
     {
@@ -82,7 +82,7 @@ namespace Mango.Services.ProductAPI.Controllers
             return _responseDto;
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<ResponseDto> Delete(int id)
         {
             try
